@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="لمسة قماش — خياطة وتعديلات منزلية بتفاصيل تناسبك.">
+  <title>لمسة قماش | خياطة منزلية</title>
+  <style>
+    :root {
+      --cream: #fbf7ef; --paper: #fffdf9; --ink: #34281f;
+      --muted: #76675b; --clay: #a45135; --sage: #64735a; --line: #eadfd2;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: Arial, sans-serif; line-height: 1.8; }
+    a { color: inherit; text-decoration: none; }
+    header, main, footer { max-width: 1100px; margin: auto; padding-inline: 24px; }
+    header { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-size: 1.35rem; font-weight: bold; }
+    .brand b, .eyebrow { color: var(--clay); }
+    nav { display: flex; gap: 20px; color: var(--muted); }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; align-items: center; padding-block: 35px 70px; }
+    .hero img { width: 100%; height: 420px; object-fit: cover; border-radius: 150px 150px 18px 18px; }
+    .eyebrow { font-weight: bold; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.25; margin: 8px 0 16px; }
+    h2 { font-size: 2rem; }
+    .intro { color: var(--muted); font-size: 1.1rem; }
+    .button { display: inline-block; background: var(--clay); color: white; padding: 11px 22px; border-radius: 8px; font-weight: bold; }
+    .section { padding-block: 25px 70px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; padding-bottom: 16px; }
+    .card img { width: 100%; height: 210px; object-fit: cover; }
+    .card h3, .card p { margin-inline: 18px; }
+    .card p { color: var(--muted); }
+    .banner { background: var(--sage); color: white; border-radius: 14px; padding: 28px; margin-bottom: 55px; }
+    .banner p { margin-bottom: 0; }
+    .note { color: var(--muted); font-size: .85rem; }
+    footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; flex-direction: column; padding-block: 18px; }
+      nav { flex-wrap: wrap; gap: 14px; }
+      .hero { grid-template-columns: 1fr; gap: 20px; padding-top: 10px; }
+      .hero img { height: 290px; grid-row: 1; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div style="background:#5B5FEF;color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:bold">
+    <a href="../../index.html" style="color:#fff;text-decoration:underline">← العودة إلى معرض الأعمال</a>
+  </div>
+  <header>
+    <a class="brand" href="#">لمسة <b>قماش</b></a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#services">الخدمات</a>
+      <a href="#contact">تواصلي معنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">خياطة منزلية بعناية</p>
+        <h1>تفاصيل صغيرة،<br>تصنع فرقًا.</h1>
+        <p class="intro">تعديلات وتفصيل ملابس باهتمام يناسب احتياجك وذوقك. احكي لنا فكرتك ونبدأها معًا.</p>
+        <a class="button" href="https://wa.me/905312599208?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B7%D8%A9" target="_blank" rel="noopener">استفسري عبر واتساب</a>
+      </div>
+      <img src="assets/sewing-machine.png" alt="ماكينة خياطة وخيوط وأقمشة ملونة" loading="lazy" width="768" height="768">
+    </section>
+
+    <section class="section" id="services">
+      <p class="eyebrow">كيف أقدر أساعدك؟</p>
+      <h2>خدمات تناسب احتياجك</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80" alt="تفاصيل ملابس" loading="lazy" width="700" height="560">
+          <h3>تعديلات الملابس</h3><p>تقصير أو تضييق أو تعديل المقاس حسب القطعة.</p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=700&q=80" alt="ملابس أنيقة" loading="lazy" width="700" height="1050">
+          <h3>تفصيل حسب الطلب</h3><p>تنسيق الفكرة والقماش والمقاس قبل البدء.</p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="أدوات خياطة" loading="lazy" width="700" height="467">
+          <h3>رتوش وإصلاح</h3><p>إصلاحات بسيطة وعناية بملابسك المفضلة.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="banner" id="contact">
+      <p class="eyebrow">خطوتك الأولى بسيطة</p>
+      <h2>عندك قطعة تحتاج تعديل؟</h2>
+      <p>أرسلي صورة ووصفًا مختصرًا، ونرتب موعدًا لمعاينة القطعة.</p>
+      <p><a class="button" href="https://wa.me/905312599208?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B7%D8%A9" target="_blank" rel="noopener">راسلينا عبر واتساب</a></p>
+      <p>البريد: <a href="mailto:s6015033@gmail.com">s6015033@gmail.com</a></p>
+    </section>
+  </main>
+  <footer>© 2026 لمسة قماش</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1185" height="791" viewBox="0 0 1185 791">
+  <rect width="1185" height="791" fill="#faf6ee"/>
+  <rect y="0" width="1185" height="92" fill="#fffdf9"/>
+  <circle cx="82" cy="46" r="27" fill="#a44f35"/>
+  <text x="82" y="57" text-anchor="middle" font-family="Arial" font-size="34" fill="#fff">س</text>
+  <text x="125" y="58" font-family="Arial" font-size="32" font-weight="700" fill="#30271f">سكر سمسم</text>
+  <g font-family="Arial" font-size="22" fill="#776b5e">
+    <text x="690" y="54">الرئيسية</text>
+    <text x="800" y="54">حكايتنا</text>
+    <text x="905" y="54">منتجاتنا</text>
+  </g>
+  <rect x="820" y="158" rx="40" width="278" height="278" fill="#e7dcc9"/>
+  <circle cx="959" cy="297" r="102" fill="#d9a85d"/>
+  <circle cx="924" cy="278" r="23" fill="#f7dfad"/>
+  <circle cx="990" cy="255" r="17" fill="#b56b45"/>
+  <circle cx="1012" cy="326" r="20" fill="#f2c675"/>
+  <text x="88" y="220" font-family="Arial" font-size="28" fill="#a44f35">حلاوة بطابع بيتي</text>
+  <text x="88" y="320" font-family="Arial" font-size="74" font-weight="700" fill="#30271f">قطعة حلوة،</text>
+  <text x="88" y="405" font-family="Georgia" font-size="74" font-style="italic" fill="#a44f35">ولمّة أحلى.</text>
+  <rect x="88" y="460" rx="28" width="230" height="56" fill="#a44f35"/>
+  <text x="203" y="497" text-anchor="middle" font-family="Arial" font-size="24" fill="#fff">اكتشفي اختياراتنا</text>
+  <g transform="translate(88 620)">
+    <rect width="318" height="115" rx="18" fill="#fffdf9" stroke="#e9dfd1"/>
+    <rect x="340" width="318" height="115" rx="18" fill="#fffdf9" stroke="#e9dfd1"/>
+    <rect x="680" width="318" height="115" rx="18" fill="#fffdf9" stroke="#e9dfd1"/>
+  </g>
+</svg>

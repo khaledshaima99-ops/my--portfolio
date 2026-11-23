@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شيماء AI | الصوت العربي الذكي</title>
+  <meta name="description"
+    content="شيماء AI — منصة ذكية لتحويل النصوص إلى أصوات عربية واضحة، وتحويل التسجيلات إلى نصوص دقيقة، بأساليب تناسب كل مناسبة.">
+  <meta name="theme-color" content="#080b14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+  <a class="back-home" href="../../index.html" aria-label="العودة إلى معرض الأعمال">↩ العودة إلى معرض الأعمال</a>
+
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="شيماء AI — الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4" />
+          </svg>
+        </span>
+        <span class="brand-type"><strong>شيماء <em>AI</em></strong><small>الصوت العربي الذكي</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#home" class="is-active">الرئيسية</a>
+        <a href="#styles">أنماط الاستخدام</a>
+        <a href="#voices">معرض الأصوات</a>
+        <a href="#studio">الاستوديو</a>
+        <a href="#how">طريقة الاستخدام</a>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="#studio">ابدأ الآن</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false"
+        aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill"><span class="dot"></span> منصة ذكية للصوت العربي — مدعومة بالذكاء الاصطناعي</span>
+          <h1>صوتك العربي…<br><span class="grad">كما ينبغي أن يُقال</span></h1>
+          <p>حوّل النصوص إلى أصوات عربية واضحة، وحوّل التسجيلات إلى نصوص دقيقة، بأساليب تناسب كل مناسبة.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#studio" data-studio-tab="tts">
+              حوّل النص إلى صوت
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m12 19-7-7 7-7M19 12H5" />
+              </svg>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#studio" data-studio-tab="stt">
+              حوّل الصوت إلى نص
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" />
+                <path d="M19 11a7 7 0 0 1-14 0M12 18v3" />
+              </svg>
+            </a>
+          </div>
+
+          <p class="disclaimer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 8h.01M11 12h1v4h1" />
+            </svg>
+            يعتمد النطق على الأصوات المتاحة في المتصفح والجهاز، وليس على تسجيلات بشرية.
+          </p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="wave-card">
+            <div class="wave-top">
+              <span class="wave-label"><span class="live-dot"></span> موجة الصوت</span>
+              <span class="wave-badge">فصحى واضحة وطبيعية</span>
+            </div>
+
+            <div class="waveform" id="heroWave" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+
+            <p class="wave-text">«مرحبًاْ بِكمْ في شيماء ، حيث يتحوّل النص العربي إلى صوت حيّ واضح.»</p>
+
+            <div class="wave-tags">
+              <span>فصحى واضحة وطبيعية</span>
+              <span>تعليق رياضي حماسي</span>
+              <span>الأعراس والتهاني</span>
+            </div>
+
+            <a class="wave-link" href="#voices">اكتشف المزيد <span aria-hidden="true">←</span></a>
+          </div>
+
+          <div class="float-badge badge-a">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v18M8 7v10M4 10v4M16 6v12M20 9v6" />
+            </svg>
+            <span>4 تنويعات صوتية</span>
+          </div>
+
+          <div class="float-badge badge-b">
+            <span class="mini-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>جودة استوديو</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section styles" id="styles">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">أنماط الاستخدام</span>
+          <h2>صوت يناسب <span class="grad">كل مناسبة</span></h2>
+          <p>اختر أسلوب الإلقاء المناسب: من التعليق الرياضي الحماسي إلى التهنئة الدافئة والإلقاء الرسمي.</p>
+        </div>
+
+        <div class="styles-grid">
+          <article class="style-card reveal">
+            <span class="style-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17a2 2 0 0 0 4 0v-2.34M12 2a4 4 0 0 0-4 4v5a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4Z" />
+              </svg>
+            </span>
+            <h3>التعليق الرياضي</h3>
+            <p>إيقاع حيوي وحماس في اللحظات المهمة مع وضوح الكلمات.</p>
+            <span class="style-tag">حماسي</span>
+          </article>
+
+          <article class="style-card reveal">
+            <span class="style-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3 9.5 8.5 4 11l5.5 2.5L12 19l2.5-5.5L20 11l-5.5-2.5Z" />
+                <path d="M5 19l1.5 2M19 4l1-2" />
+              </svg>
+            </span>
+            <h3>الأعراس والتهاني</h3>
+            <p>إلقاء دافئ احتفالي بوضوح الأسماء ووقفات جميلة.</p>
+            <span class="style-tag">دافئ</span>
+          </article>
+
+          <article class="style-card reveal">
+            <span class="style-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 11v2a2 2 0 0 0 2 2h2l4 4V5L7 9H5a2 2 0 0 0-2 2Z" />
+                <path d="M16 8a5 5 0 0 1 0 8M19 5a9 9 0 0 1 0 14" />
+              </svg>
+            </span>
+            <h3>الإعلانات</h3>
+            <p>صوت جذاب وواضح يبرز العبارات المهمة دون تشويه.</p>
+            <span class="style-tag">تجاري</span>
+          </article>
+
+          <article class="style-card reveal">
+            <span class="style-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 5h16M4 12h10M4 19h7" />
+                <circle cx="18" cy="17" r="3" />
+              </svg>
+            </span>
+            <h3>الإلقاء الرسمي</h3>
+            <p>نطق فصيح متزن بمخارج واضحة ووقفات منظمة.</p>
+            <span class="style-tag">رسمي</span>
+          </article>
+
+          <article class="style-card reveal">
+            <span class="style-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" />
+                <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5" />
+              </svg>
+            </span>
+            <h3>القصص والمحتوى التعليمي</h3>
+            <p>إلقاء هادئ ودافئ مناسب للقصص والشروحات.</p>
+            <span class="style-tag">هادئ</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section voices" id="voices">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">معرض الأصوات</span>
+          <h2>تنويعات أداء <span class="grad">للصوت العربي</span></h2>
+          <p>جرّب تغييرات النبرة وسرعة الإلقاء على الصوت العربي المتاح في جهازك.</p>
+        </div>
+
+        <div class="voices-grid">
+          <article class="voice-card reveal" data-pitch="0.78" data-rate="0.9">
+            <span class="voice-avatar" aria-hidden="true">ح</span>
+            <div class="voice-info">
+              <strong>نبرة منخفضة</strong>
+              <small>إلقاء هادئ وبطيء</small>
+            </div>
+            <button class="voice-play" type="button" aria-label="معاينة النبرة المنخفضة"
+              data-sample="مرحبًا بكم. هذا مثال على إلقاء هادئ ونبرة منخفضة." data-pitch="0.78" data-rate="0.9">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4v16l13-8Z" />
+              </svg>
+            </button>
+          </article>
+
+          <article class="voice-card reveal" data-pitch="1" data-rate="1">
+            <span class="voice-avatar alt" aria-hidden="true">ز</span>
+            <div class="voice-info">
+              <strong>نبرة متوازنة</strong>
+              <small>إلقاء طبيعي وواضح</small>
+            </div>
+            <button class="voice-play" type="button" aria-label="معاينة النبرة المتوازنة"
+              data-sample="مرحبًا بكم. هذا مثال على إلقاء طبيعي ومتوازن." data-pitch="1" data-rate="1">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4v16l13-8Z" />
+              </svg>
+            </button>
+          </article>
+
+          <article class="voice-card reveal" data-pitch="1.25" data-rate="1.08">
+            <span class="voice-avatar alt" aria-hidden="true">س</span>
+            <div class="voice-info">
+              <strong>نبرة مرتفعة</strong>
+              <small>إلقاء حيوي وواضح</small>
+            </div>
+            <button class="voice-play" type="button" aria-label="معاينة النبرة المرتفعة"
+              data-sample="أهلًا وسهلًا بكم. إليكم تجربة إلقاء حيوي بنبرة مرتفعة." data-pitch="1.25" data-rate="1.08">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4v16l13-8Z" />
+              </svg>
+            </button>
+          </article>
+
+          <article class="voice-card reveal" data-pitch="1.08" data-rate="1.22">
+            <span class="voice-avatar" aria-hidden="true">ش</span>
+            <div class="voice-info">
+              <strong>نبرة سريعة</strong>
+              <small>إلقاء نشيط وإيقاع أسرع</small>
+            </div>
+            <button class="voice-play" type="button" aria-label="معاينة النبرة السريعة"
+              data-sample="أهلًا بكم! استمعوا إلى هذا المثال بإيقاع أسرع ونبرة نشيطة." data-pitch="1.08"
+              data-rate="1.22">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4v16l13-8Z" />
+              </svg>
+            </button>
+          </article>
+        </div>
+
+        <div class="voice-library">
+          <div class="voice-library-heading">
+            <h3>أضيفي صوتك إلى قائمتك</h3>
+            <p>سجّلي عيّنة قصيرة أو اختاري ملفًا صوتيًا. تُحفظ العيّنات في هذا المتصفح فقط، وتظهر هنا للمعاينة.</p>
+            <p class="voice-library-note">التسجيل المحفوظ عيّنة صوتية وليس صوتًا مستنسخًا لقراءة النصوص.</p>
+          </div>
+
+          <div class="voice-library-fields">
+            <div class="voice-library-field">
+              <label for="customVoiceName">اسم الصوت</label>
+              <input id="customVoiceName" type="text" maxlength="40" placeholder="مثال: صوتي">
+            </div>
+            <div class="voice-library-field">
+              <label for="customVoiceGender">تصنيف الصوت</label>
+              <select id="customVoiceGender">
+                <option value="female">صوت أنثوي</option>
+                <option value="male">صوت ذكوري</option>
+                <option value="neutral">غير محدد</option>
+              </select>
+            </div>
+            <div class="voice-library-field voice-library-file">
+              <label for="customVoiceFile">أو اختاري تسجيلًا موجودًا</label>
+              <input id="customVoiceFile" type="file" accept="audio/*">
+            </div>
+          </div>
+
+          <div class="voice-library-actions">
+            <button class="btn btn-ghost" type="button" id="recordCustomVoice">تسجيل عيّنة</button>
+            <button class="btn btn-ghost" type="button" id="stopCustomVoice" disabled>إيقاف التسجيل</button>
+            <button class="btn btn-primary" type="button" id="saveCustomVoice" disabled>حفظ في قائمتي</button>
+          </div>
+
+          <p class="voice-library-status" id="customVoiceStatus" role="status">يمكنك إضافة عيّنتك الصوتية متى شئت.</p>
+          <div class="voices-grid custom-voice-list" id="customVoiceList" aria-live="polite"></div>
+        </div>
+
+        <p class="voices-note reveal" id="voicesNote" role="status">
+          تُعرض الأصوات العربية المثبّتة على جهازك فقط. تنويعات النبرة والسرعة ليست أصواتًا أو لهجات مستقلة.
+        </p>
+      </div>
+    </section>
+
+    <section class="section studio" id="studio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">الاستوديو</span>
+          <h2>جرّب <span class="grad">التحويل الآن</span></h2>
+          <p>يعمل تفريغ الصوت محليًا داخل المتصفح؛ يتطلب أول استخدام تنزيل نموذج حجمه نحو 40 ميغابايت، ثم لا يُرسل
+            التسجيل إلى خادم.</p>
+        </div>
+
+        <div class="studio-card reveal">
+          <div class="studio-tabs" role="tablist" aria-label="أدوات الاستوديو">
+            <button class="studio-tab is-active" id="tabTts" type="button" role="tab" aria-selected="true"
+              aria-controls="panelTts" data-tab="tts">
+              نص إلى صوت
+            </button>
+            <button class="studio-tab" id="tabStt" type="button" role="tab" aria-selected="false"
+              aria-controls="panelStt" data-tab="stt">
+              صوت إلى نص
+            </button>
+          </div>
+
+          <div class="studio-panel is-active" id="panelTts" role="tabpanel" aria-labelledby="tabTts">
+            <div class="studio-body">
+              <div class="studio-field">
+                <label for="ttsText">النص العربي</label>
+                <textarea id="ttsText" rows="7"
+                  placeholder="اكتب أو الصق النص العربي الذي تريد تحويله إلى صوت...">صوتك العربي كما ينبغي أن يُقال. مرحبًا بكم في شيماء AI.</textarea>
+                <div class="field-foot">
+                  <span id="charCount">0 / 500 حرف</span>
+                  <button class="mini-btn" type="button" id="clearText">مسح</button>
+                </div>
+              </div>
+
+              <div class="studio-controls">
+                <div class="control-row">
+                  <label for="voiceSelect">الصوت</label>
+                  <select id="voiceSelect">
+                    <option value="">جارٍ تحميل الأصوات…</option>
+                  </select>
+                </div>
+
+                <div class="control-row">
+                  <label for="styleSelect">أسلوب الإلقاء</label>
+                  <select id="styleSelect">
+                    <option value="normal">إلقاء طبيعي</option>
+                    <option value="formal">إلقاء رسمي</option>
+                    <option value="cheerful">تعليق حماسي</option>
+                    <option value="warm">تهنئة دافئة</option>
+                    <option value="calm">سرد هادئ</option>
+                  </select>
+                </div>
+
+                <div class="control-row">
+                  <label for="rateRange">سرعة الإلقاء <span id="rateValue">1.0×</span></label>
+                  <input id="rateRange" type="range" min="0.6" max="1.5" step="0.1" value="1">
+                </div>
+
+                <div class="control-row">
+                  <label for="pitchRange">نبرة الصوت <span id="pitchValue">1.0</span></label>
+                  <input id="pitchRange" type="range" min="0.6" max="1.4" step="0.1" value="1">
+                </div>
+
+                <div class="studio-actions">
+                  <button class="btn btn-primary" type="button" id="playBtn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M7 4v16l13-8Z" />
+                    </svg>
+                    تشغيل الصوت
+                  </button>
+                  <button class="btn btn-ghost" type="button" id="stopBtn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="6" y="6" width="12" height="12" rx="2" />
+                    </svg>
+                    إيقاف
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p class="studio-status" id="ttsStatus" role="status">جاهز للتحويل. اكتب النص ثم اضغط «تشغيل الصوت».</p>
+          </div>
+
+          <div class="studio-panel" id="panelStt" role="tabpanel" aria-labelledby="tabStt" hidden>
+            <div class="studio-body">
+              <div class="studio-field">
+                <label for="sttText">النص المفرّغ</label>
+                <textarea id="sttText" rows="7" placeholder="سيظهر النص هنا بعد بدء التسجيل والتفريغ..."></textarea>
+                <div class="field-foot">
+                  <span id="sttCount">0 كلمة</span>
+                  <button class="mini-btn" type="button" id="copyText">نسخ النص</button>
+                </div>
+              </div>
+
+              <div class="studio-controls stt-controls">
+                <div class="mic-visual" aria-hidden="true">
+                  <span class="mic-ring"></span>
+                  <span class="mic-ring delay"></span>
+                  <span class="mic-core">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" />
+                      <path d="M19 11a7 7 0 0 1-14 0M12 18v3" />
+                    </svg>
+                  </span>
+                </div>
+
+                <p class="stt-hint" id="sttHint">اضغط «بدء التسجيل» واسمح باستخدام الميكروفون. يُحمّل نموذج التفريغ عند
+                  أول استخدام، ثم تتم المعالجة على جهازك. المقاطع القصيرة أسرع في التفريغ.</p>
+
+                <div class="studio-actions">
+                  <button class="btn btn-primary" type="button" id="micBtn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" />
+                      <path d="M19 11a7 7 0 0 1-14 0M12 18v3" />
+                    </svg>
+                    بدء التسجيل
+                  </button>
+                  <button class="btn btn-ghost" type="button" id="micStop" aria-label="إيقاف التسجيل وبدء التفريغ"
+                    disabled>إيقاف وتفريغ</button>
+                </div>
+              </div>
+            </div>
+            <p class="studio-status" id="sttStatus" role="status">الصوت يبقى على جهازك. يلزم اتصال بالإنترنت لتنزيل
+              النموذج عند أول استخدام.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">طريقة الاستخدام</span>
+          <h2>ثلاث خطوات <span class="grad">بسيطة</span></h2>
+          <p>من النص إلى الصوت الجاهز في دقائق.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-num">1</span>
+            <h3>اكتب أو الصق النص</h3>
+            <p>أدخل النص العربي الذي تريد تحويله إلى صوت، واختر أسلوب الإلقاء.</p>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-num">2</span>
+            <h3>حسّن النطق</h3>
+            <p>راجع التشكيل المقترح وعالج الكلمات الملتبسة والأسماء قبل التوليد.</p>
+          </article>
+
+          <article class="step reveal">
+            <span class="step-num">3</span>
+            <h3>أنشئ واستمع</h3>
+            <p>ولّد الصوت واستمع إليه مباشرة. تعتمد الأصوات المتاحة على المتصفح والجهاز.</p>
+          </article>
+        </div>
+
+        <div class="cta reveal">
+          <div>
+            <h2>جاهز تخلّي صوتك <span class="grad">يُقال صح؟</span></h2>
+            <p>ابدأ الآن بتحويل أول نص عربي إلى صوت واضح وطبيعي.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="#studio">ابدأ مجانًا</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4" />
+            </svg>
+          </span>
+          <span class="brand-type"><strong>شيماء <em>AI</em></strong><small>الصوت العربي الذكي</small></span>
+        </a>
+        <p>منصة ذكية لإنتاج التعليق الصوتي العربي الواضح والطبيعي، وتحويل التسجيلات إلى نصوص دقيقة، بأساليب تناسب كل
+          مناسبة.</p>
+        <p class="footer-disclaimer">يعتمد النطق على الأصوات المتاحة في المتصفح والجهاز.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="الأدوات">
+        <strong>الأدوات</strong>
+        <a href="#studio">نص إلى صوت</a>
+        <a href="#studio">صوت إلى نص</a>
+        <a href="#studio">الاستوديو</a>
+        <a href="#voices">سجل الأصوات</a>
+      </nav>
+
+      <nav class="footer-nav" aria-label="المعلومات">
+        <strong>المعلومات</strong>
+        <a href="#how">المساعدة والأسئلة الشائعة</a>
+        <a href="#how">سياسة الخصوصية وشروط الاستخدام</a>
+        <a href="../../index.html">العودة إلى معرض الأعمال</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 شيماء AI — جميع الحقوق محفوظة</p>
+      <p>نسخة معاد بناؤها بواسطة شيماء خالد</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
